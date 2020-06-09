@@ -30,38 +30,7 @@ document.onkeydown = function(e) {
 </script>
 <script type='text/javascript'>
 var isCtrl = false;
-document.onkeyup=function(e)
-{
-if(e.which == 17)
-isCtrl=false;
-}
-document.onkeydown=function(e)
-{
-if(e.which == 17)
-isCtrl=true;
-if((e.which == 85) || (e.which == 67) &amp;&amp; isCtrl == true)
-{
-// alert(&#8216;Keyboard shortcuts are cool!&#8217;);
-return false;
-}
-}
-var isNS = (navigator.appName == "Netscape") ? 1 : 0;
-if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
-function mischandler(){
-return false;
-}
-function mousehandler(e){
-var myevent = (isNS) ? e : event;
-var eventbutton = (isNS) ? myevent.which : myevent.button;
-if((eventbutton==2)||(eventbutton==3)) return false;
-}
-document.oncontextmenu = mischandler;
-document.onmousedown = mousehandler;
-document.onmouseup = mousehandler;
-</script>
-<center>
-	<center><img src="https://thumbs2.imgbox.com/f1/a2/qNdVmUav_t.png" alt="Example" width="250" height="250"><br>
-<SCRIPT> 
+document.onk
 farbbibliothek = new Array(); 
 farbbibliothek[0] = new Array("#FF0000","#FF1100","#FF2200","#FF3300","#FF4400","#FF5500","#FF6600","#FF7700","#FF8800","#FF9900","#FFaa00","#FFbb00","#FFcc00","#FFdd00","#FFee00","#FFff00","#FFee00","#FFdd00","#FFcc00","#FFbb00","#FFaa00","#FF9900","#FF8800","#FF7700","#FF6600","#FF5500","#FF4400","#FF3300","#FF2200","#FF1100"); 
 farbbibliothek[1] = new Array("#00FF00","#000000","#00FF00","#00FF00"); 
